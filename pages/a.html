@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A - Shared Subsequences</title>
+        <meta charset="UTF-8">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">        
+        <link rel="stylesheet" href="../style.css">
+
+        <script type="text/javascript" id="MathJax-script" async
+                src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    </head>
+    <body>
+        <div class="header-container">
+            <span class="header-title">A - Shared Subsequences</span>
+        </div>
+
+        <main>
+            <div class="section-container">
+                <header>
+                    <h1 class="section-title">問題文</h1>
+                </header>
+                <section>
+                    <div class="desc-container">
+                        <p class="desc-body">
+                            英小文字からなる長さ\(N\)の文字列\(S\)と\(T\)が与えられます。<br>
+                            \(S\)の連続部分文字列であって以下の条件を満たすものの個数を求めてください。
+                        </p>
+                        <ul>
+                            <li>連続部分文字列に含まれる文字のうち、\(T\)にも含まれている文字は1つ以下</li>
+                        </ul>
+                        <p class="desc-body">
+                            ここで、ある文字列の連続部分文字列とは、文字列の先頭と末尾から0文字以上削除することによって得られる文字列とします。
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="section-container">
+                <header>
+                    <h1 class="section-title">制約</h1>
+                </header>
+                <section>
+                    <div class="desc-container">
+                        <ul>
+                            <li>\(1\leq{}N\leq{}2\times10^5\)</li>
+                            <li>\(S, T\)は英小文字からなる文字列</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <div class="section-container">
+                <header>
+                    <h1 class="section-title">入力</h1>
+                </header>
+                <section>
+                    <div class="desc-container">
+                        <p class="desc-body">
+                            入力は以下の形式で標準入力から与えられる。
+                        </p>
+                    </div>
+                    <span class="code-block desc-container">
+                        \(N\)<br>
+                        \(S\)<br>
+                        \(T\)
+                    </span>
+                </section>
+            </div>
+
+            <div class="section-container">
+                <header>
+                    <h1 class="section-title">出力</h1>
+                </header>
+                <section>
+                    <div class="desc-container">
+                        <p class="desc-body">
+                            条件を満たすような連続部分文字列の数を一行に出力してください。
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </body>
+</html>

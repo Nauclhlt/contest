@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>C - Cocktail Flavor</title>
+        <meta charset="UTF-8">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">        
+        <link rel="stylesheet" href="../style.css">
+
+        <script type="text/javascript" id="MathJax-script" async
+                src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    </head>
+    <body>
+        <div class="header-container">
+            <span class="header-title">C - Cocktail Flavor</span>
+        </div>
+
+        <main>
+            <div class="section-container">
+                <header>
+                    <h1 class="section-title">問題文</h1>
+                </header>
+                <section>
+                    <div class="desc-container">
+                        <p class="desc-body">
+                            高橋君は\(N\)種類のお酒を持っています。<br>
+                            種類\(i(1\leq{}i\leq{}N)\)のお酒の甘さは\(A_i\)、強さは\(B_i\)です。<br>
+                            これらのお酒から1種類以上選んで混ぜることでカクテルを作ります。<br>
+                            \(M(1\leq{}M\leq{}N)\)種類のお酒\((P_1, P_2, ... , P_M)\)を選んでカクテルを作った時、その甘さは\(\sum_{k=1}^{M}{A_{P_k}}\)  強さは\(\sum_{k=1}^{M}{B_{P_k}}\)です。<br>
+                            高橋君は甘さが\(0\)以上\(K\)以下かつ強さが\(L\)以上であるようなカクテルを作りたいです。<br>
+                            このようなカクテルを作るためのお酒の種類の選び方は何通りあるでしょうか？<br>
+                            ただし、お酒の種類を選ぶ順序は区別しないものとします。
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="section-container">
+                <header>
+                    <h1 class="section-title">制約</h1>
+                </header>
+                <section>
+                    <div class="desc-container">
+                        <ul>
+                            <li>\(2\leq{}N\leq{}2\times{}10^5\)</li>
+                            <li>\(0\leq{}A_i, B_i\leq{}50\)</li>
+                            <li>\(1\leq{}K\leq{}100\)</li>
+                            <li>\(1\leq{}L\leq{}100\)</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <div class="section-container">
+                <header>
+                    <h1 class="section-title">入力</h1>
+                </header>
+                <section>
+                    <div class="desc-container">
+                        <p class="desc-body">
+                            入力は以下の形式で標準入力から与えられる。
+                        </p>
+                    </div>
+                    <span class="code-block desc-container">
+                        \(N\)&nbsp;\(K\)&nbsp;\(L\)<br>
+                        \(A_1\)&nbsp;\(B_1\)<br>
+                        \(A_2\)&nbsp;\(B_2\)<br>
+                        ...<br>
+                        \(A_N\)&nbsp;\(B_N\)<br>
+                    </span>
+                </section>
+            </div>
+
+            <div class="section-container">
+                <header>
+                    <h1 class="section-title">出力</h1>
+                </header>
+                <section>
+                    <div class="desc-container">
+                        <p class="desc-body">
+                            条件を満たすようなお酒の種類の選び方の数を一行に出力してください。
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>B - Select and Shuffle</title>
+        <meta charset="UTF-8">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">        
+        <link rel="stylesheet" href="../style.css">
+
+        <script type="text/javascript" id="MathJax-script" async
+                src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    </head>
+    <body>
+        <div class="header-container">
+            <span class="header-title">B - Select and Shuffle</span>
+        </div>
+
+        <main>
+            <div class="section-container">
+                <header>
+                    <h1 class="section-title">問題文</h1>
+                </header>
+                <section>
+                    <div class="desc-container">
+                        <p class="desc-body">
+                            英小文字からなる長さ\(N\)の文字列\(S\)が与えられます。<br>
+                            文字列\(P\)を次の手順によって得られる文字列とします。
+                        </p>
+                        <ul>
+                            <li>\(S\)の各文字を並び替え、先頭から\(i(1\leq{}i\leq{}N)\)文字を\(P\)とする。</li>
+                        </ul>
+                        <p class="desc-body">
+                            英小文字\(x\)に対して、「アルファベットの何番目の文字か」を\(p(x)\)で表します。例えば、\(p(a)=1\), \(p(d)=4\)です。<br>
+                            このとき、以下の条件を満たすような文字列\(P\)はいくつあるでしょうか。
+                        </p>
+                        <ul>
+                            <li>\(P\)の\(i\)文字目を\(P_i\)とすると、\(\sum_{k=1}^{|P|}{p(P_k)}\)は偶数</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <div class="section-container">
+                <header>
+                    <h1 class="section-title">制約</h1>
+                </header>
+                <section>
+                    <div class="desc-container">
+                        <ul>
+                            <li>\(1\leq{}N\leq{}7\)</li>
+                            <li>\(S\)は英小文字からなる文字列</li>
+                            <li>\(S\)に含まれる文字はすべて異なる</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <div class="section-container">
+                <header>
+                    <h1 class="section-title">入力</h1>
+                </header>
+                <section>
+                    <div class="desc-container">
+                        <p class="desc-body">
+                            入力は以下の形式で標準入力から与えられる。
+                        </p>
+                    </div>
+                    <span class="code-block desc-container">
+                        \(N\)<br>
+                        \(S\)
+                    </span>
+                </section>
+            </div>
+
+            <div class="section-container">
+                <header>
+                    <h1 class="section-title">出力</h1>
+                </header>
+                <section>
+                    <div class="desc-container">
+                        <p class="desc-body">
+                            条件を満たすような文字列\(P\)の数を一行に出力してください。
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </body>
+</html>
